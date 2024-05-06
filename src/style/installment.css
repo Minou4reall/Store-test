@@ -1,0 +1,99 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.installment-container {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.installment-container .installment-plan {
+    border: 1px solid #4b5563;
+    border-radius: 10px;
+    padding: 30px 30px 30px;
+    position: relative;
+    transition-duration: .5s;
+}.installment-container .installment-plan:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 2px 15px #00000067;
+}
+.installment-container .standard {
+    border: 2px solid #6419e6;
+}
+.installment-container .standard::after {
+    content: "Most Selected";
+    position: absolute;
+    background-color: #55338f;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 50px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.installment-container .installment-plan .plan-header {
+    text-align: center;
+}
+.installment-container .installment-plan .plan-header .plan-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.installment-container .installment-plan .plan-header .plan-duration {
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    position: relative;
+}
+.installment-container .installment-plan .plan-header .plan-duration::after {
+    content: "Months";
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+}
+.installment-container .installment-plan .plan-details ul li {
+    font-size: 1rem;
+    border-bottom: 1px solid #4b556390;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.installment-container .installment-plan .action {
+    display: flex;
+    margin:  20px 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+.installment-container .installment-plan .action button {
+    text-transform: uppercase;
+    background-color: #6419e6;
+    width: 200px;
+}
+.installment-container .installment-plan .action button:hover {
+    background-color: #4903c1;
+}
+.installment-container .installment-plan .more-details {
+    display: flex;
+    margin:  30px 0 0 ;
+    justify-content: center;
+    align-items: center;
+}
+.installment-container .installment-plan .more-details .det-link {
+    color: #7437dc;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+

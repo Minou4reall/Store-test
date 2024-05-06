@@ -1,0 +1,77 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #fff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.landing {
+  background-image: url("../images/andreas-palmer-UJSjxFNLFWY-unsplash.jpg");
+  background-size: cover;
+  height: 700px;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 11, 24, 0.8);
+}
+.landing .landing-content {
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-basis: 50%;
+  text-align: center;
+  padding: 1rem;
+}
+.landing .landing-content  h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.landing .landing-content p {
+  font-size: 1.5rem;
+}
+.landing .landing-content .btn-link {
+  text-decoration: none;
+  margin-top: 30px;
+  color: var(--light-color);
+  background-color: #2563eb;
+  font-size: .9rem;
+  font-weight: 600;
+  width: 250px;
+  padding: 1rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+}
+.landing .landing-content .btn-link:hover {
+  background-color: #3b82f6;
+}
+.status-side {
+  display: flex;
+  color: var(--light-color);
+  padding: 50px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.status-side .status .value {
+ font-size: 3rem;
+ font-weight: 900;
+}
+.status-side .status p {
+  font-weight: 500;
+}

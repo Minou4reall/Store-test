@@ -1,0 +1,85 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.history-container {
+  padding: 50px 150px;
+}
+.history-container .products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.history-container .products-container .item {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 1px #4b5563 solid;
+  padding: 1.5rem 10px;
+}
+.history-container .products-container .item:last-child {
+  border: none;
+}
+.history-container .products-container .image-content img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+}
+.history-container .products-container .title-det {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.history-container .products-container .title-det h3 {
+  font-weight: 500;
+}
+.history-container .products-container .title-det p {
+  font-size: 0.9rem;
+}
+.history-container .products-container .quantity {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.history-container .products-container .quantity label {
+  font-weight: 500;
+}
+.history-container .products-container .quantity input {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid #39414d;
+  border-radius: 0.5rem;
+  width: 60%;
+  text-align: center;
+  cursor: default;
+}
+.history-container .products-container .quantity input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #a6adba33;
+}
+.history-container .products-container .amount {
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.history-container .products-container .installment {
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+

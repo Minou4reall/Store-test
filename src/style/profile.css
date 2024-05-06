@@ -1,0 +1,56 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.profile-content {
+  display: flex;
+  margin: 20px 0 40px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.profile-content form {
+  padding: 0 3rem;
+  width: 90%;
+  text-align: center;
+}
+.profile-content .grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 80px;
+  row-gap: 10px;
+  text-align: left;
+}
+.profile-content .grid-content .input-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 80rem;
+  color: #a6adba;
+}
+.profile-content .grid-content .input-content label {
+  padding-left: 5px;
+  font-size: 0.875rem;
+}
+.profile-content .grid-content .input-content input {
+  background-color: transparent;
+  padding: 10px 1rem;
+  
+  border: 1px solid #39414d;
+  
+  border-radius: 0.5rem;
+}
+.profile-content .grid-content .input-content input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #a6adba33;
+}
+.profile-content form button {
+    text-transform: uppercase;
+}
+

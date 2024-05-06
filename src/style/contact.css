@@ -1,0 +1,20 @@
+
+.contact-slide {
+  display: flex;
+  margin: 70px 0 50px;
+  justify-content: center;
+  align-items: center;
+}
+.contact-slide form {
+    max-width: 36rem;
+}
+.contact-slide form .grid-content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    width: 580px;
+}
+.contact-slide form label {
+    color: var(--light-background-color);
+}

@@ -1,0 +1,24 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.slide-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #4b5563;
+  color: var(--light-background-color);
+}
+.slide-header .title {
+  font-size: 6rem;
+  margin-bottom: 25px;
+}
+.slide-header .extension {
+  font-size: 1.5rem;
+}

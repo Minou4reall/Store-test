@@ -1,0 +1,90 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cart-container {
+  padding: 50px 150px;
+}
+.cart-container .products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+ 
+}
+.cart-container .products-container .item {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 1px #4b5563 solid;
+  padding: 1.5rem 10px;
+}
+.cart-container .products-container .item:last-child {
+    border: none;
+}
+.cart-container .products-container .image-content img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+}
+.cart-container .products-container .title-det {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.cart-container .products-container .title-det h3 {
+  font-weight: 500;
+}
+.cart-container .products-container .title-det p {
+  font-size: 0.9rem;
+}
+.cart-container .products-container .quantity {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.cart-container .products-container .quantity label {
+  font-weight: 500;
+}
+.cart-container .products-container .quantity input {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid #39414d;
+  border-radius: 0.5rem;
+  width: 60%;
+  text-align: center;
+  cursor: default;
+}
+.cart-container .products-container .quantity input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #a6adba33;
+}
+.cart-container .products-container .amount {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cart-container .products-container .buttons {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.cart-container .products-container .buttons button {
+  padding: 8px;
+  height: auto;
+  font-size: 0.875rem;
+}
+.cart-container .products-container .buttons .cash {
+  font-size: 1rem;
+}

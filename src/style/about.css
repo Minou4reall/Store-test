@@ -1,0 +1,37 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.about-slide {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.about-slide .text-content {
+  display: flex;
+  max-width: 42rem;
+  color: var(--light-background-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about-slide .text-content .header-title {
+  font-size: 3.75rem;
+  margin-bottom: 10px;
+}
+.about-slide .text-content .phargraph {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.about-slide .text-content .link-btn {
+ color: white;
+ text-transform: uppercase;
+ width: 16rem;
+}

@@ -1,0 +1,51 @@
+:root {
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer {
+    padding: 50px 0;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-background-color);
+    background-color: #191e24;
+}
+.footer ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    
+}
+.footer ul a {
+    text-decoration: none;
+    color: var(--light-background-color);
+    font-size: 1.5rem;
+
+}
+.footer ul a:hover {
+    text-decoration: underline;
+}
+.footer .social {
+    display: flex;
+    gap: 30px;
+}
+.footer .social a {
+    width: 40px;
+    height: 40px;
+}
+.footer svg {
+    fill: var(--light-background-color);
+    width: 50px;
+}
+.footer p {
+    color: var(--light-background-color);
+    font-size: 1.5rem;
+}

@@ -10,9 +10,11 @@ function SinglePlan(props) {
           <div className="plan-duration">{props.duration}</div>
         </div>
         <div className="action">
-          <button className="btn bg-blue-600 hover:bg-blue-500 text-white">
-            Add Plan
-          </button>
+          <Link to={"/purchase"} >
+            <a className="btn bg-blue-600 hover:bg-blue-500 text-white">
+              Add Plan
+            </a>
+          </Link>
         </div>
         <div className="plan-details">
           <ul>
@@ -21,11 +23,6 @@ function SinglePlan(props) {
             <li>Option to pay the full amount at any time</li>
             <li>The amount is deducted monthly</li>
           </ul>
-          <div className="more-details">
-            <Link onClick={() => window.scrollTo(0, 0)} className="det-link">
-              See all the details
-            </Link>
-          </div>
         </div>
       </div>
     </>

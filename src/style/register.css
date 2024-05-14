@@ -40,6 +40,7 @@
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   width: 100%;
+  background-color: transparent;
 }
 .register-form-container .link-login {
     text-transform: uppercase;

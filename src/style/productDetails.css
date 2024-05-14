@@ -1,52 +1,60 @@
 :root {
-    --dark-background-color: #1d232a;
-    --light-background-color: #ffffff;
-  }
-  * {
-    margin: 0;
-    box-sizing: border-box;
+  --dark-background-color: #1d232a;
+  --light-background-color: #ffffff;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 .product-details {
-    display: grid;
-    padding: 1.25rem ;
-    
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    border-bottom: 1px solid #4b5563;
+  display: grid;
+  padding: 1.25rem;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-bottom: 1px solid #4b5563;
 }
 .product-details .image-side img {
-    width: 24rem;
-    max-width: 100%;
-    min-height: 400px;
-    cursor: pointer;
+  width: 24rem;
+  max-width: 100%;
+  min-height: 400px;
+  cursor: pointer;
 }
 .product-details .details-side {
-    color: var(--light-background-color);
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.25rem;
+  color: var(--light-background-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
 }
 .product-details .details-side .product-title {
-    font-size: 3rem;
-    line-height: 1;
+  font-size: 3rem;
+  line-height: 1;
 }
 .product-details .details-side .product-price {
-    color: #f87272;
-    font-size: 1.875rem;
-    letter-spacing: 1px;
+  color: #f87272;
+  font-size: 1.875rem;
+  letter-spacing: 1px;
 }
 .product-details .details-side .product-description {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 .product-details .details-side .product-quantity {
-    display: flex;
-    gap: 5px;
-    color:#a6adba ;
+  display: flex;
+  gap: 5px;
+  color: #a6adba;
 }
 .product-details .details-side .buttons button {
-    text-transform: uppercase;
-    margin-right: 8px;
+  text-transform: uppercase;
+  margin-right: 8px;
 }
 .product-details .details-side .categories ul {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+.product-details .inst-btn {
+  margin-left: 8px;
+  background-color: #6419e6;
+}
+
+.product-details .inst-btn:hover {
+  background-color: #5614c9;
 }

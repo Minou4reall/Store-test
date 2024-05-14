@@ -44,19 +44,21 @@ function FormPurchase() {
               required
             />
           </div>
+          <div className="input-content">
+            <label htmlFor="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              placeholder="Enter The Address"
+              required
+            />
+          </div>
           <div className="buttons">
             <button className="btn bg-blue-600 hover:bg-blue-500 text-white">
               <BsCashStack className="text-xl mr-1" />
               Buy Now
             </button>
-            <Link
-              to={"/shop/installment"}
-              className="btn bg-blue-600 hover:bg-blue-500 text-white"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              <BsReceiptCutoff className="text-xl mr-1" />
-              installment
-            </Link>
+           
           </div>
         </form>
       </div>

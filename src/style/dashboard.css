@@ -1,0 +1,211 @@
+.dashboard-container {
+  background-color: #141b2d;
+  padding: 10px 0;
+  border-radius: 0.5rem;
+}
+
+.dashboard-container .dashboard-content .dash-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.dashboard-container .dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.dashboard-container .dashboard-cards .card {
+  width: 23%;
+  background-color: #1f2941;
+  height: 130px;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 20px 0 10px;
+}
+
+.dashboard-container .dashboard-cards .card .dtls-title {
+  font-size: 0.875rem;
+}
+.dashboard-container .dashboard-cards .card .dtls-value {
+  color: white;
+  font-size: 1.6rem;
+}
+.dashboard-container .dashboard-cards .card .dtls-value .icon {
+  font-size: 1.4rem;
+  margin-right: 2px;
+}
+.dashboard-container .dashboard-cards .card-icon {
+  font-size: 2.7rem;
+}
+.dashboard-container .dashboard-cards .monthly {
+  border-left: #912cf6 5px solid;
+}
+.dashboard-container .dashboard-cards .monthly .dtls-title {
+  color: #a858f7;
+  font-weight: bold;
+}
+
+.dashboard-container .dashboard-cards .monthly .card-icon {
+  color: #912cf6db;
+}
+.dashboard-container .dashboard-cards .annual {
+  border-left: #1dc989 5px solid;
+}
+.dashboard-container .dashboard-cards .annual .dtls-title {
+  color: #1dc989;
+  font-weight: bold;
+}
+
+.dashboard-container .dashboard-cards .annual .card-icon {
+  color: #1dc989cc;
+}
+.dashboard-container .dashboard-cards .users {
+  border-left: #37b8cd 5px solid;
+}
+.dashboard-container .dashboard-cards .users .dtls-title {
+  color: #37b8cd;
+  font-weight: bold;
+}
+
+.dashboard-container .dashboard-cards .users .card-icon {
+  color: #37b8cc;
+  
+}
+.dashboard-container .dashboard-cards .pending-orders {
+  border-left: #f3c245 5px solid;
+}
+.dashboard-container .dashboard-cards .pending-orders .dtls-title {
+  color: #f3c245;
+  font-weight: bold;
+}
+
+.dashboard-container .dashboard-cards .pending-orders .card-icon {
+  color: #f3c245cc;
+}
+.dashboard-container .dashboard-details {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.dashboard-container .dashboard-details .recent-sales {
+  width: 60%;
+  background-color: #1f2941;
+  border-radius: 0.1rem;
+  height: 480px;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+.dashboard-container .dashboard-details .recent-sales .recent-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dashboard-container .dashboard-details .best-selling {
+  width: 36%;
+  background-color: #1f2941;
+  border-radius: 0.5rem;
+  height: 480px;
+  padding: 20px;
+}
+.dashboard-container .dashboard-details .best-selling .best-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+.dashboard-container .dashboard-details .best-selling .b-product {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+.dashboard-container .dashboard-details .best-selling .b-product:hover {
+  background-color: #374151;
+}
+.dashboard-container .dashboard-details .best-selling .b-product img {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+.dashboard-container .dashboard-details .best-selling .b-product .pro-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(245, 245, 245);
+  text-wrap: nowrap;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.dashboard-container .dashboard-details .best-selling .b-product .p-total {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.dashboard-container table {
+  width: 100%;
+}
+.dashboard-container table thead {
+  background-color: #5575de96;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+.dashboard-container table thead .rds-1 {
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 0; 
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+}
+.dashboard-container table thead .rds-2 {
+  border-top-left-radius: 0; 
+  border-top-right-radius: 5px; 
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+}
+.dashboard-container table th {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.dashboard-container table tbody tr {
+  border-bottom: 1px solid #374151;
+  transition-duration: 0.1s;
+}
+.dashboard-container table tbody tr:hover {
+  background-color: #37415161;
+}
+.dashboard-container table tbody td {
+  color: #e0e5e0;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+.dashboard-container table tbody .title {
+  display: flex;
+}
+.dashboard-container table tbody .title img {
+  width: 45px;
+  height: 45px;
+  border-radius: 0.5rem;
+}
+.dashboard-container table tbody .name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
+}

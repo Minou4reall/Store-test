@@ -1,12 +1,14 @@
+import { useState } from "react";
 import "../style/shop.css";
 import FormDatePicker from "./FormDatePicker";
 function SearchFilter() {
+  const [priceRange, setPriceRange] = useState("5000");
   return (
     <>
       <div className="search-section">
         <form action="" className="search-form ">
           <div className="srch">
-            <label htmlFor="" >search product</label>
+            <label htmlFor="">search product</label>
             <input type="text" className="des" placeholder="Search here..." />
           </div>
           <div className="srch ">
@@ -34,34 +36,43 @@ function SearchFilter() {
               <option value="price-low">price low</option>
             </select>
           </div>
-          <div className="srch">
-            <label htmlFor="">select RGB</label>
-            <select id="sel-RGB" className="des">
-              <option value="all">all</option>
-              <option value="RGB">Yes</option>
-              <option value="non-RGB">NO</option>
-            </select>
-          </div>
+
           <div className="srch">
             <label htmlFor="">
               <span>select price</span>
-              <span>$5000</span>
+              <span>${priceRange}</span>
             </label>
-            <input type="range" min="0" max="5000" className="range range-primary range-sm" id="rng-price" />
+            <input
+              type="range"
+              min="0"
+              max="5000"
+              value={priceRange}
+              className="range range-primary range-sm"
+              id="rng-price"
+              onChange={(e) => {
+                setPriceRange(e.target.value)
+              }}
+              />
             <div className="range-value">
               <span>$0</span>
               <span>$5000</span>
             </div>
           </div>
-          <div className="srch">
-          <FormDatePicker/>
-          </div>
+
           <div className="srch ckb">
             <label htmlFor="">Only products in stock</label>
-            <input type="checkbox" id="sel-stock" className="checkbox checkbox-primary undefined" />
+            <input
+              type="checkbox"
+              id="sel-stock"
+              className="checkbox checkbox-primary undefined"
+            />
           </div>
-          <a className="submit">Search</a>
-          <a className="reset">Reset</a>
+          <div className="btn-a">
+            <a className="submit">Search</a>
+          </div>
+          <div className="btn-a">
+            <a className="reset">Reset</a>
+          </div>
         </form>
       </div>
     </>

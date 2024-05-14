@@ -7,9 +7,7 @@ import {
   faHeadphones,
   faMicrochip,
   faMagnifyingGlass,
-  faSun,
   faCartShopping,
-  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 function Header() {
   return (
@@ -26,8 +24,10 @@ function Header() {
       </div>
       <div className="icons-side">
         <div className="logo-brand">
-          <FontAwesomeIcon className="logo-icon" icon={faMicrochip} /> 2SM
-          Technology
+          <Link to={""}>
+            <FontAwesomeIcon className="logo-icon" icon={faMicrochip} /> 2SM
+            Technology
+          </Link>
         </div>
         <div className="icons-groupe">
           <Link to={"/shop"} className="btn btn-ghost btn-circle">
@@ -78,7 +78,18 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/order-history" className="text-accent-content text-white">
+                <Link
+                  to="/control-panel/dashboard"
+                  className="text-accent-content text-white"
+                >
+                  Controll Panel
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/order-history"
+                  className="text-accent-content text-white"
+                >
                   Order history
                 </Link>
               </li>

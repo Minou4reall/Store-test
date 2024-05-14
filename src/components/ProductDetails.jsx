@@ -1,9 +1,12 @@
 import { FaCartShopping } from "react-icons/fa6";
 import QuantityInput from "./QuantityInput";
 import productImage from "../images/61yncRM36qL.__AC_SX300_SY300_QL70_ML2_.jpg";
-import { BsCashStack } from "react-icons/bs";
+import { BsCashStack, BsReceiptCutoff } from "react-icons/bs";
 import "../style/productDetails.css";
 import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
+
+
 function ProductDetails() {
   return (
     <>
@@ -21,7 +24,9 @@ function ProductDetails() {
             <QuantityInput />
           </div>
           <div className="buttons">
-            <button className="btn bg-blue-600 hover:bg-blue-500 text-white">
+            <button onClick={()=>{
+              toast.success("Product has been added in the Cart successfully");
+            } } className="btn bg-blue-600 hover:bg-blue-500 text-white">
               <FaCartShopping className="text-xl mr-1" />
               Add to cart
             </button>
@@ -31,6 +36,13 @@ function ProductDetails() {
             >
               <BsCashStack className="text-xl mr-1" />
               Buy Now
+            </Link>
+            <Link
+              to={"/Shop/installment"}
+              className="btn bg-blue-600 hover:bg-blue-500 text-white inst-btn"
+            >
+              <BsReceiptCutoff className="text-xl mr-1" />
+              Go Installment
             </Link>
           </div>
           <div className="categories">
@@ -43,12 +55,6 @@ function ProductDetails() {
               </li>
               <li className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
                 Category: laptop
-              </li>
-              <li className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-                RGB: No
-              </li>
-              <li className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-                Production Date: 2021-10-31
               </li>
             </ul>
           </div>

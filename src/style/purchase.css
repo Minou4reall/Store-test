@@ -12,6 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #1f2937;
+  
 }
 .purchase-form .title {
     color: white;
@@ -29,6 +31,7 @@
   align-items: center;
   border: 1px solid #4b5563;
   gap: 20px;
+  background-color: #1f2937;
 }
 .purchase-form form .input-content {
   display: flex;
@@ -43,14 +46,16 @@
 .purchase-form form .input-content input {
   padding: 8px 10px;
   font-size: 0.875rem;
-  color: #a6adba;
+  color: #dedfe1;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   width: 100%;
+  background-color: transparent;
+  font-weight: 500;
 }
 .purchase-form .date-cvv {
     display: flex;
-    width: 92.7%;
+    width: 87.7%;
     justify-content: space-between;
     
 }

@@ -8,13 +8,11 @@
 }
 .profile-content {
   display: flex;
-  margin: 20px 0 40px;
   justify-content: center;
   align-items: center;
-  
 }
 .profile-content form {
-  padding: 0 3rem;
+  margin-top: 20px;
   width: 90%;
   text-align: center;
 }
@@ -35,13 +33,14 @@
 .profile-content .grid-content .input-content label {
   padding-left: 5px;
   font-size: 0.875rem;
+  font-weight: 500;
 }
 .profile-content .grid-content .input-content input {
   background-color: transparent;
   padding: 10px 1rem;
-  
+
   border: 1px solid #39414d;
-  
+
   border-radius: 0.5rem;
 }
 .profile-content .grid-content .input-content input:focus {
@@ -50,7 +49,174 @@
   outline-offset: 2px;
   outline-color: #a6adba33;
 }
+.profile-content .grid-content .input-content input[type="file"] {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 30px;
+}
 .profile-content form button {
-    text-transform: uppercase;
+  text-transform: capitalize;
+  margin: 20px 0 50px;
+}
+.page-container {
+  display: flex;
+  min-height: 90vh;
+  border-top: 1px #4b5563 solid;
 }
 
+.page-container .content-side {
+  flex: 1;
+  padding: 10px;
+}
+.page-container .sidebar-container {
+  width: 180px;
+  color: #ffffff;
+  font-weight: 500;
+
+  border-right: 2px #4b5563 solid;
+  background-color: #141a22;
+}
+.page-container .sidebar-container ul {
+  display: flex;
+  flex-direction: column;
+}
+.page-container .sidebar-container ul li {
+  cursor: pointer;
+  padding: 10px;
+  transition-duration: 0.2s;
+}
+.page-container .sidebar-container ul li:hover {
+  background-color: #4b5563;
+}
+
+.installment-status {
+  background-color: #1f2937;
+  border-radius: .5rem;
+  padding: 10px;
+}
+.installment-status .status {
+  font-size: 2rem;
+  color: white;
+  padding-left: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.installment-status .status span {
+  margin-right: 10px;
+  font-size: 1.9rem;
+  color: rgb(244, 54, 54);
+}
+.installment-status .request-title {
+  font-size: 1.9rem;
+  border-top: 1px solid #39414d;
+  border-bottom: 1px solid #39414d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.installment-status .title {
+  font-size: 1.6rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+  row-gap: 10px;
+  padding: 0 200px;
+  text-align: left;
+}
+.card-grid .input-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 80rem;
+  color: #a6adba;
+}
+.card-grid .input-content label {
+  padding-left: 5px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.card-grid .input-content input {
+  background-color: transparent;
+  padding: 10px 1rem;
+  border: 1px solid #39414d;
+  border-radius: 0.5rem;
+}
+.card-grid .input-content input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #a6adba33;
+}
+
+.user-installment {
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+}
+
+.user-installment .order-header {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+}
+.user-installment .details-installment {
+  transition-duration: 0.3s;
+  margin-top: 20px;
+}
+.user-installment table {
+  width: 100%;
+}
+.user-installment table thead {
+  background-color: #374151;
+  font-weight: bold;
+  text-align: left;
+}
+.user-installment table th {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.user-installment table tbody tr {
+  border-bottom: 1px solid #374151;
+  transition-duration: .1s;
+}
+.user-installment table tbody tr:hover {
+  background-color: #37415161;
+}
+.user-installment table tbody td {
+  color: white;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+.user-installment table tbody .title {
+  display: flex;
+}
+.user-installment table tbody .title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+}
+.user-installment table tbody .name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
+}

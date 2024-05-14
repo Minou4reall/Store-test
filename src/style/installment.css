@@ -75,12 +75,14 @@
     justify-content: center;
     align-items: center;
 }
-.installment-container .installment-plan .action button {
+.installment-container .installment-plan .action a {
     text-transform: uppercase;
     background-color: #6419e6;
     width: 200px;
+    border: none;
+    border-radius: .5rem;
 }
-.installment-container .installment-plan .action button:hover {
+.installment-container .installment-plan .action a:hover {
     background-color: #4903c1;
 }
 .installment-container .installment-plan .more-details {
